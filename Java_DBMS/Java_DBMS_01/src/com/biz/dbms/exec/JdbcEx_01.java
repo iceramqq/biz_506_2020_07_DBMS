@@ -81,18 +81,18 @@ public class JdbcEx_01 {
 				
 				OrderVO orderVO = new OrderVO();
 				
-				String o_num = result.getNString(DBContract.ORDER.POS_O_NUM_STR); // 위치값
-				o_num = result.getNString(DBContract.ORDER.POS_O_NUM_STR); // 칼럼이름으로
-				orderVO.setO_num(o_num);
+				String o_num = result.getNString(DBContract.ORDER.POS_O_NUM_String); // 위치값
+				o_num = result.getNString(DBContract.ORDER.POS_O_NUM_String); // 칼럼이름으로
+				orderVO.setO_NUM(o_num);
 				
-				String o_cnum = result.getNString(DBContract.ORDER.POS_O_CNUM_STR);
-				orderVO.setO_cnum(o_cnum);
+				String o_cnum = result.getNString(DBContract.ORDER.POS_O_CNUM_String);
+				orderVO.setO_CNUM(o_cnum);
 
-				String o_pcode = result.getNString(DBContract.ORDER.POS_O_PCODE_STR);
-				orderVO.setO_pcode(o_pcode);
+				String o_pcode = result.getNString(DBContract.ORDER.POS_O_PCODE_String);
+				orderVO.setO_PCODE(o_pcode);
 				
 				int o_price = result.getInt(DBContract.ORDER.POS_O_PRICE_INT);
-				orderVO.setO_price(o_price);
+				orderVO.setO_PRICE(o_price);
 				
 				orderList.add(orderVO);
 				
@@ -108,9 +108,9 @@ public class JdbcEx_01 {
 			System.out.println("주문번호\t고객번호\t상품번호\t");
 			System.out.println("---------------------------------------------");
 			for(OrderVO vo : orderList) {
-				System.out.print(vo.getO_num() + "\t");
-				System.out.print(vo.getO_cnum() + "\t");
-				System.out.print(vo.getO_pcode() + "\n");
+				System.out.print(vo.getO_NUM() + "\t");
+				System.out.print(vo.getO_CNUM() + "\t");
+				System.out.print(vo.getO_PCODE() + "\n");
 			}
 			System.out.println("==============================================");
 			

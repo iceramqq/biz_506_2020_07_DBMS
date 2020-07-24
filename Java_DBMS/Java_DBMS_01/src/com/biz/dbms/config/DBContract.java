@@ -74,15 +74,15 @@ public class DBContract {
 		public final static String COL_O_QTY_INT = "o_qty"; //	NUMBER
 		public final static String COL_O_TOTAL_INT = "o_total"; //	NUMBER
 		
-		public final static int POL_O_SEQ_LONG = 1;
-		public final static int POL_O_NUM_String = 2;
-		public final static int POL_O_DATE_String = 3;
-		public final static int POL_O_CNUM_String = 4;
-		public final static int POL_O_PCODE_String = 5;
-		public final static int POL_O_PNAME_String = 6;
-		public final static int POL_O_PRICE_INT = 7;
-		public final static int POL_O_QTY_INT = 8;
-		public final static int POL_O_TOTAL_INT = 9;
+		public final static int POS_O_SEQ_LONG = 1;
+		public final static int POS_O_NUM_String = 2;
+		public final static int POS_O_DATE_String = 3;
+		public final static int POS_O_CNUM_String = 4;
+		public final static int POS_O_PCODE_String = 5;
+		public final static int POS_O_PNAME_String = 6;
+		public final static int POS_O_PRICE_INT = 7;
+		public final static int POS_O_QTY_INT = 8;
+		public final static int POS_O_TOTAL_INT = 9;
 	}
 	
 }

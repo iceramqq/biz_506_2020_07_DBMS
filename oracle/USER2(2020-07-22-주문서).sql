@@ -87,7 +87,7 @@ DELETE FROM tbl_order
 SELECT * FROM tbl_order;
 
 DELETE FROM tbl_order
-    WHERE O_seq = 9;
+    WHERE O_seq = 12;
     
 
 ALTER TABLE tbl_order 
