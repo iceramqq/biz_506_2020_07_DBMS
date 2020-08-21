@@ -24,3 +24,4 @@ D_MN_TEL	VARCHAR2(20)
 DROP TABLE tbl_product;
 
 
+
