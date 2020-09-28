@@ -1,5 +1,5 @@
 -- USER 독서록 프로젝트
-DROP TABLE tbl_authority;
+DROP TABLE tbl_member;
 
 CREATE TABLE tbl_member (
     M_USERID	VARCHAR2(30)		PRIMARY KEY,
@@ -8,12 +8,12 @@ CREATE TABLE tbl_member (
     M_TEL	VARCHAR2(30)		,
     M_ADDRESS	nVARCHAR2(125)	,	
     M_ROLL	VARCHAR2(20)		,
-    
-    ENABLE CHAR(1)	DEFAULT '0'	CONSTRAINT enble_veri CHECK(ENABLE = '0' or ENABLE = '1'),
-    
-    AccountNonExpired	CHAR(1)	,	
-    AccountNonLocked	CHAR(1)	,	
-    CredentialsNonExpired	CHAR(1)		
+    Enabled	CHAR(1)	DEFAULT '0',
+    AccountNonExpired	CHAR(1)		,
+    AccountNonLocked	CHAR(1)		,
+    CredentialsNonExpired	CHAR(1)	,	
+    M_EMAIL	VARCHAR2(30)		
+	
 );
 
 CREATE TABLE tbl_authority (
