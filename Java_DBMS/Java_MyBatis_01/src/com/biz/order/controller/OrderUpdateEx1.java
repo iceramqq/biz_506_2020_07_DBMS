@@ -7,12 +7,8 @@ public class OrderUpdateEx1 {
 	public static void main(String[] args) {
 		
 		OrderInput oInput = new OrderInput();
-		while (true) {
-			if(!oInput.orderUpdate()) {
-				break;
-			}
-		}
-		System.out.println("업무종료");
+		oInput.orderUpdate();
+		
 	}
 	
 }

@@ -4,11 +4,14 @@ import com.biz.order.service.OrderInput;
 
 public class OrderInputEx1 {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		OrderInput oInput = new OrderInput();
-		oInput.orderUpdate();
-		
+		while(true) {
+			if(!oInput.orderInsert()) {
+				break;
+			}
+		}
+		System.out.println("입력 종료!!!");
 	}
-	
 }

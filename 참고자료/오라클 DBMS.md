@@ -46,3 +46,9 @@
 2. DDL(Data definition Lang.) : CREATE, DROP, ALTER
 3. DML(Data Maniplation Lang.) : INSERT, SELECT, UPDATE, DELETE
 4. DCL(Data Control Lang.) : GRANT, REVOKE, COMMIT, ROLLBACk
+
+
+
+
+
+

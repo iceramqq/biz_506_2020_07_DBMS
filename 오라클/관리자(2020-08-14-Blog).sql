@@ -1,13 +1,13 @@
--- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½
+-- ¿©±â´Â °ü¸®ÀÚ È­¸é
 
--- ï¿½ï¿½Î±×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ TableSpace ï¿½ï¿½ï¿½ï¿½
+-- ºí·Î±×¸¦ À§ÇÑ TableSpace »ý¼º
 CREATE TABLESPACE blogTS
-DATAFILE 'C:/bizwork/workspace/oracle_dbms/blog.dbf'
+DATAFILE 'C:/bizwork/oracle_dbms/blog.dbf'
 SIZE 1M AUTOEXTEND ON NEXT 1K;
 
--- user1 ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+-- user1 »ç¿ëÀÚ »ý¼º
 CREATE USER user1 IDENTIFIED BY user1
 DEFAULT TABLESPACE blogTS;
 
--- user1ï¿½ï¿½ ï¿½ï¿½ï¿½ÑºÎ¿ï¿½
+-- user1¿¡ ±ÇÇÑºÎ¿©
 GRANT DBA TO user1;

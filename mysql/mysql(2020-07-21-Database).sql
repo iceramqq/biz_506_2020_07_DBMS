@@ -1,12 +1,13 @@
--- MySQL에서는 사용자는 기본적으로 root 시작을 한다
--- 오라클과 차이점
-------------------------------------------------------
--- 구분				오라클				MySQL
--- 저장소			tablespce			database
--- scheme			user				database
--- 데이터저장		user.table 형식 	table
--- user의 개념		scheme				login하는 Account
--------------------------------------------------------
+-- MySQL에서 사용자는 기본적으로 root시작을 한다
+-- 오라클과 차이점 
+----------------------------------------------------------
+-- 구분			오라클					MySQL
+-- 저장소       TableSpace				DataBase
+-- Scheme		User					DataBase
+-- 데이터저장	User.Table 형식			Table
+-- User의 개념	Scheme					login하는 Account
+----------------------------------------------------------
+
 -- 1. MySQL 데이터를 저장하기 위해서 최초로 DataBase를 생성
 -- 2. 생성된 Database를 사용가능하도록 Opnen 절차 필요
 -- 3. 사용자 login 권한과 접속하는 용도의 Account
@@ -175,6 +176,8 @@ VALUES('20003','D001','국어',90);
 
 INSERT INTO tbl_score(sc_seq,sc_num,sc_scode,sc_sname,sc_score)
 VALUES(0,'20003','D001','국어',90);
+
+
 
 
 
