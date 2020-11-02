@@ -43,6 +43,13 @@ UPDATE tbl_test SET t_tel = '010-333-3333' WHERE t_num = 'S0003';
 SELECT * FROM tbl_test WHERE t_name  = '장영실';
 DELETE FROM tbl_test WHERE t_num = 'S0005';
 
+CREATE TABLE tbl_score (
+    학번	CHAR(5),
+    학과	CHAR(10),
+    국어	NUMBER,
+    영어	NUMBER,
+    수학	NUMBER
 
+);
 
 
